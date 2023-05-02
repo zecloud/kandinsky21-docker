@@ -138,6 +138,7 @@ def main():
         "--prior-steps", type=str, nargs="?", default="25", help="Number of prior sampling steps"
     )                        
     args = parser.parse_args()
+    kandinsky_text2img(args)
 
 if __name__ == "__main__":
     main()
